@@ -9,8 +9,8 @@
     "dev": "vite",
     "build": "npm run tscheck &&  npm run css-generate && vite build",
     "tscheck": "tsc",
-    "lint": "eslint --ext .js,.ts,.jsx,.tsx src",
-    "format": "npm run lint --fix & prettier --write './src/**/*.{js,jsx,ts,tsx}'",
+    "lint": "eslint --ext .js,.ts,.jsx,.tsx ./src",
+    "format": "npm run lint --fix && npx prettier --write './src/**/*.{js,jsx,ts,tsx}'",
     "css-generate": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css"
   },
   "keywords": [
