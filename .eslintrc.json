@@ -9,6 +9,12 @@
     "react/jsx-filename-extension": [
       "error",
       { "extensions": [".jsx", ".tsx"] }
+    ],
+    "import/no-anonymous-default-export": [
+      "error",
+      {
+        "allowObject": true
+      }
     ]
   }
 }
