@@ -3,7 +3,7 @@ import React from 'react';
 export const App: React.FC = () => {
   return (
     <>
-      <h1>Item Buyers</h1>
+      <h1 className="font-bold">Item Buyers</h1>
     </>
   );
 };
