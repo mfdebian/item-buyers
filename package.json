@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
     "build": "npm run tscheck && vite build",
-    "tscheck": "tsc"
+    "tscheck": "tsc",
+    "lint": "eslint --ext .js,.ts,.jsx,.tsx src",
+    "format": "npm run lint --fix & prettier --write 'src/**/*.{js,jsx,ts,tsx}'"
   },
   "keywords": [
     "react",
@@ -25,6 +27,10 @@
     "@types/react": "^18.2.12",
     "@types/react-dom": "^18.2.5",
     "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-react-app": "^7.0.1",
+    "prettier": "^2.8.8",
     "typescript": "^5.1.3",
     "vite": "^4.3.9"
   }

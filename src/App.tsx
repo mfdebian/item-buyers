@@ -1,10 +1,9 @@
-import React from "react";
+import React from 'react';
 
 export const App: React.FC = () => {
-
   return (
     <>
       <h1>Item Buyers</h1>
     </>
-  );  
+  );
 };
