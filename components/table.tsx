@@ -12,7 +12,7 @@ export default async function Table() {
   } catch (e: any) {
     if (e.message === `relation "items" does not exist`) {
       console.log(
-        'Table does not exist, creating and seeding it with dummy data now...'
+        'Table does not exist, creating and seeding it with dummy data now...',
       )
       // Table is not created yet
       await seed()

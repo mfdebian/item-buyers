@@ -8,7 +8,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --check --ignore-path .gitignore .",
+    "format:fix": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
     "@types/node": "18.15.11",
@@ -29,6 +31,8 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "@types/ms": "^0.7.31"
+    "@types/ms": "^0.7.31",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^3.0.0"
   }
 }

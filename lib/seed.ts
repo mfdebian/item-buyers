@@ -7,7 +7,7 @@ export async function seed() {
     .addColumn('id', 'serial', (cb) => cb.primaryKey())
     .addColumn('name', 'varchar(255)', (cb) => cb.notNull())
     .addColumn('createdAt', sql`timestamp with time zone`, (cb) =>
-      cb.defaultTo(sql`current_timestamp`)
+      cb.defaultTo(sql`current_timestamp`),
     )
     .execute()
   console.log(`Created "items" table`)

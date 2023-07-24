@@ -3,8 +3,7 @@ import { Inter } from 'next/font/google'
 
 export const metadata = {
   title: 'Item buyers',
-  description:
-    'Sell stuff',
+  description: 'Sell stuff',
 }
 
 const inter = Inter({
