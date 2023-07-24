@@ -1,5 +1,6 @@
 import { db } from '@/lib/kysely'
 import { timeAgo } from '@/lib/utils'
+import Image from 'next/image'
 import RefreshButton from './refresh-button'
 import { seed } from '@/lib/seed'
 
@@ -43,6 +44,7 @@ export default async function Table() {
             className="flex items-center justify-between py-3"
           >
             <div className="flex items-center space-x-4">
+              <Image src={item.image} alt={item.name} width={36} height={36} />
               <div className="space-y-1">
                 <p className="font-medium leading-none">{item.name}</p>
               </div>

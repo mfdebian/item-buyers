@@ -7,6 +7,7 @@ interface ItemTable {
   // made optional in inserts and updates.
   id: Generated<number>
   name: string
+  image: string
 
   // You can specify a different type for each operation (select, insert and
   // update) using the `ColumnType<SelectType, InsertType, UpdateType>`
